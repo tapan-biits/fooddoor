@@ -1,5 +1,6 @@
 <?php
 
+/*dev*/
 namespace App\Providers\UserServices;
 use Illuminate\Support\Facades\DB;
 use Schema;
