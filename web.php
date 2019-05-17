@@ -15,9 +15,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
+//Route::resource('/user', 'UsersController');
+// Route::get('/generic/{table}', 'GenericController@get_all_details');
+
+// Route::post('/generic/{table}/{unique_val}', 'GenericController@store_details');
+// Route::post('/generic/{table}/{unique_val}/login', 'GenericController@login');
+
+// Route::get('/generic/{table}/{id}/{value}', 'GenericController@get_details');
+
+
+
+
 Route::post('/user','GenericController@create_user');
-Route::get('/user/{phone}','GenericController@get_user');
-Route::post('/user/{phone}','GenericController@update_user');
+
+
 Route::post('/user/validate','GenericController@create_user_validate');
 Route::post('/user/login','GenericController@login');
 Route::post('/user/login/validate','GenericController@login_validate');
